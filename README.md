@@ -1,65 +1,69 @@
 # 🌌 Alura Space
 
-Uma galeria de imagens espaciais feita com Django! 🚀
+O **Alura Space** é uma aplicação web desenvolvida com Django e Python, que permite aos usuários visualizar, adicionar, editar e excluir imagens relacionadas ao espaço, como estrelas, galáxias e nebulosas. O projeto foi desenvolvido como parte da formação em Django da Alura, com o objetivo de consolidar conhecimentos em desenvolvimento web com Django.
 
----
+## 🚀 Funcionalidades
 
-## 🌌 Sobre o Projeto
-
-O **Alura Space** é uma aplicação web para exibição de imagens do espaço sideral: nebulosas, galáxias, planetas e muito mais!
-Ele foi desenvolvido com **Django** e utiliza a **AWS S3** para armazenamento das imagens.
-
----
+- Visualização de uma galeria de imagens do espaço.
+- Cadastro de novas imagens com informações detalhadas.
+- Edição e exclusão de imagens existentes.
+- Filtragem de imagens por categoria.
+- Pesquisa de imagens por nome.
+- Autenticação de usuários com login e cadastro.
+- Painel administrativo utilizando o Django Admin.
 
 ## 🛠️ Tecnologias Utilizadas
 
-- 🤖 Django
-- 🔢 Python
-- ☁️ Amazon S3
-- 🕁️ HTML
-- 🖌️ CSS
-- 🕹️ JavaScript
+- [Python](https://www.python.org/)
+- [Django](https://www.djangoproject.com/)
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap 5
 
----
+## 📦 Instalação e Execução
 
-## 📚 Como Rodar Localmente
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/moreira-m98/alura_space.git
+   cd alura_space
+   ```
 
-1. 🔗 Clone o repositório:
+2. Crie e ative um ambiente virtual:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # Linux/Mac
+   venv\Scripts\activate     # Windows
+   ```
 
-```bash
-git clone https://github.com/moreira-m98/alura_space.git
-```
+3. Instale as dependências:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-2. 🔄 Acesse o diretório do projeto:
+4. Aplique as migrações:
+   ```bash
+   python manage.py migrate
+   ```
 
-```bash
-cd alura_space
-```
+5. Inicie o servidor de desenvolvimento:
+   ```bash
+   python manage.py runserver
+   ```
 
-3. 👨‍💻 Instale as dependências:
+6. Acesse a aplicação em [http://localhost:8000](http://localhost:8000)
 
-```bash
-pip install -r requirements.txt
-```
+## 📁 Estrutura do Projeto
 
-4. ⚖️ Configure as variáveis de ambiente para integração com o **Amazon S3**.
+O projeto está organizado da seguinte forma:
 
-5. 🚀 Execute o servidor de desenvolvimento:
+- `apps/` - Contém os aplicativos Django da aplicação.
+- `media/` - Armazena os arquivos de mídia, como as imagens carregadas.
+- `static/` - Contém os arquivos estáticos, como CSS e JavaScript.
+- `templates/` - Contém os templates HTML da aplicação.
+- `manage.py` - Script de gerenciamento do Django.
+- `requirements.txt` - Lista de dependências do projeto.
 
-```bash
-python manage.py runserver
-```
+## 👤 Autor
 
-6. 🔗 Acesse o app em:
-
-```
-http://localhost:8000
-```
-
----
-
-
-Feito com ❤️ e muito código por [moreira-m98](https://github.com/moreira-m98)!
-
-🚀🚀🚀
-
+Desenvolvido por [moreira-m98](https://github.com/moreira-m98) como parte do curso de Django da Alura.
