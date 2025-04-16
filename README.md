@@ -11,6 +11,7 @@ O **Alura Space** é uma aplicação web desenvolvida com Django e Python, que p
 - Pesquisa de imagens por nome.
 - Autenticação de usuários com login e cadastro.
 - Painel administrativo utilizando o Django Admin.
+- Autenticação de usuários via OAuth 2.0 utilizando as plataformas Google e Github
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -20,6 +21,10 @@ O **Alura Space** é uma aplicação web desenvolvida com Django e Python, que p
 - CSS3
 - JavaScript
 - Bootstrap 5
+
+## 🔐 Autenticação com OAuth 2.0 
+
+A aplicação implementa autenticação de usuários utilizando o protocolo OAuth 2.0, permitindo que os usuários façam login com suas contas do Google ou GitHub. Essa funcionalidade foi adicionada para melhorar a segurança e proporcionar uma experiência de login simplificada.
 
 ## 📦 Instalação e Execução
 
@@ -45,13 +50,18 @@ O **Alura Space** é uma aplicação web desenvolvida com Django e Python, que p
    ```bash
    python manage.py migrate
    ```
+   
+5. Crie um superusuário(opcional):
+   ```bash
+   python manage.py createsuperuser
+   ```
 
-5. Inicie o servidor de desenvolvimento:
+6. Inicie o servidor de desenvolvimento:
    ```bash
    python manage.py runserver
    ```
 
-6. Acesse a aplicação em [http://localhost:8000](http://localhost:8000)
+7. Acesse a aplicação em [http://localhost:8000](http://localhost:8000)
 
 ## 📁 Estrutura do Projeto
 
@@ -60,6 +70,7 @@ O projeto está organizado da seguinte forma:
 - `apps/` - Contém os aplicativos Django da aplicação.
 - `media/` - Armazena os arquivos de mídia, como as imagens carregadas.
 - `static/` - Contém os arquivos estáticos, como CSS e JavaScript.
+- `tech/` - Contém os arquivos referente ao OAuth 2.0.
 - `templates/` - Contém os templates HTML da aplicação.
 - `manage.py` - Script de gerenciamento do Django.
 - `requirements.txt` - Lista de dependências do projeto.
