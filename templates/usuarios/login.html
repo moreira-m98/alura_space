@@ -55,6 +55,27 @@
                     <div>
                         <button class="btn btn-success col-12" style="padding-top: 5px" type="submit">Logar</button>
                     </div>
+
+                    <div class="social-media">
+                        <p style="color: #E1E1E1; font-size: 1rem; text-align: center; margin-top: 0.5rem; font-weight: 400; line-height: 1.5rem;">
+                            Faça o Login usando um dos seguintes métodos
+                        </p>
+                        <div style="display: flex; justify-content: center; gap: 3rem; margin-top: 1rem;">
+                            <div style="text-align: center;">
+                                <a style="text-decoration: none; color: #E1E1E1;" href="http://localhost:8000/accounts/github/login/?process=login">
+                                    <img style="display: block; margin: auto;" src="{% static 'assets/github/github.svg' %}" alt="Ícone para realizar a autenticação com GitHub" class="social-media-icon">
+                                    <p>GitHub</p>
+                                </a>
+                            </div>
+                            <div style="text-align: center;">
+                                <a style="text-decoration: none; color: #E1E1E1;" href="http://localhost:8000/accounts/google/login/?process=login">
+                                    <img style="display: block; margin: auto;" src="{% static 'assets/google/google.svg' %}" alt="Ícone para realizar a autenticação com Google" class="social-media-icon">
+                                    <p>Google</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </form>
             </section>
         </main>

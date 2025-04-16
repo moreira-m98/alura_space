@@ -406,3 +406,34 @@ table {
     --bs-alert-bg: #cfe2ff;
     --bs-alert-border-color: #b6d4fe;
 }
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;  /* começa o alinhamento pelo topo */
+    flex-direction: row;      /* mantém lado a lado */
+    gap: 5rem;                /* espaço entre cada social */
+    margin-top: 2rem;         /* ajuste o espaço conforme a sua página */
+}
+
+.social-media-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;   /* imagem em cima, texto embaixo */
+}
+
+.social-media-icon {
+    /*height: 5rem;*/
+    /*width: 5rem;*/
+    margin-top: 0;            /* remove espaço acima da imagem */
+}
+
+.social-media-details a p {
+    color: #E1E1E1;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 0.5rem;       /* espaço entre imagem e texto */
+    font-weight: 400;
+    line-height: 1.5rem;
+}
